@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#25CCC5C5"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/ic_baseline_arrow_back_ios_24" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/back"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="3dp"
+        android:layout_toRightOf="@+id/back"
+        android:text="Goals"
+        android:textColor="#000"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/info1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/animation" />
+
+    <ImageView
+        android:id="@+id/info2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/info1"
+        android:layout_marginLeft="13sp"
+        android:layout_toRightOf="@+id/info1"
+        android:scaleType="fitCenter"
+        android:src="@drawable/football" />
+
+    <ImageView
+        android:id="@+id/info3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/info2"
+        android:layout_marginLeft="13sp"
+        android:layout_toRightOf="@+id/info2"
+        android:src="@drawable/chart" />
+
+    <ImageView
+        android:id="@+id/info4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/info1"
+        android:layout_marginLeft="21dp"
+        android:layout_toRightOf="@+id/info3"
+        android:src="@drawable/factory" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="290dp"
+            android:layout_height="600dp"
+            android:layout_marginLeft="34dp"
+            android:layout_marginRight="70dp"
+            android:background="#FAF8F8"
+            android:paddingTop="20dp"
+            app:cardCornerRadius="30dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="30dp"
+                    android:textColorHint="#B9B8B8">
+
+                    <EditText
+                        android:id="@+id/invest_for"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:hint="Who is this investment for? *"
+                        android:inputType="text"
+                        android:lines="1"
+                        android:paddingLeft="10sp"
+                        android:paddingTop="10sp"
+                        android:textColorHint="#000" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:paddingLeft="10dp"
+                    android:text="Is the equlity one time or recurring ?"
+                    android:textColor="#000" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:text="Fixed"
+                        android:textColor="#000" />
+
+                    <Switch
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Variable"
+                        android:textColor="#000" />
+                </LinearLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:textColorHint="#B9B8B8">
+
+                    <EditText
+                        android:id="@+id/purches_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:hint="Date of purches"
+                        android:inputType="text"
+                        android:lines="1"
+                        android:paddingLeft="10sp"
+                        android:paddingTop="10sp"
+                        android:textColorHint="#000" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:textColorHint="#B9B8B8">
+
+                    <EditText
+                        android:id="@+id/number_of_units"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:hint="Number of units"
+                        android:inputType="text"
+                        android:lines="1"
+                        android:paddingLeft="10sp"
+                        android:paddingTop="10sp"
+                        android:textColorHint="#7E6C6C" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:textColorHint="#B9B8B8">
+
+                    <EditText
+                        android:id="@+id/purchase_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="20dp"
+                        android:hint="Purchase price"
+                        android:inputType="text"
+                        android:lines="1"
+                        android:paddingLeft="10sp"
+                        android:paddingTop="10sp"
+                        android:textColorHint="#7E6C6C" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <Button
+                    android:id="@+id/button1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/mybutton"
+                    android:padding="10dp"
+                    android:text="   Add more   "
+                    android:textColor="#ffffff" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="588dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/dash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:src="@drawable/dash" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="47dp"
+            android:text="Dashboard"
+            android:textColor="#000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="575dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:src="@drawable/setting" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="588dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/pro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="270dp"
+            android:src="@drawable/user" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="280dp"
+            android:gravity="center_horizontal"
+            android:text="Profile"
+            android:textColor="#000" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="33dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="350dp"
+        android:background="@drawable/back25" />
+
+    <Button
+        android:layout_width="33dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="325dp"
+        android:layout_marginTop="350dp"
+        android:background="@drawable/forward22" />
+
+    <Button
+        android:layout_width="25dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="330dp"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/mess" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="285dp"
+        android:layout_marginTop="535dp"
+        android:background="@drawable/circle" />
+
+</RelativeLayout>
